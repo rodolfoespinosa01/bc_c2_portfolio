@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+
+a {
+  color: blue;
+}
+
 #logo {
   max-width: 80px;
 }
@@ -20,16 +25,16 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  padding: 7px;
+  padding: 11px;
   align-items: center;
-  border-bottom: solid 10px black;
+  border-bottom: solid 12.5px blue;
   align-self: center;
   width: 100%;
   background: white;
 }
 
 
-/* HERO SECTION, HELLO WORLD */
+/* ***BELOW*** HERO SECTION, HELLO WORLD ***BELOW*** */
 
 .hello_world {
   display: flex;
@@ -47,28 +52,27 @@ header {
   font-size: 40px;
 }
 
-.hello_world div:nth-of-type(2) {
-  display: flex;
+
+/* SELECTOR FOR EMOJIES BELOW */
+#emojis {
   font-size: 20vw;
   padding: 25px;
-
 }
 
-/* IMAGE AND INTRO */
-
-section {
-  text-align: center;
+#emojis div {
+  display: flex;
+  justify-content: center;
 }
 
-section img {
-  width: 30%;
-  height: auto;
-}
+/* ***BELOW*** IMAGE AND INTRO ***BELOW*** */
+
+
 
 .selfie_intro {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 10px;
 }
 
@@ -95,49 +99,106 @@ section img {
 }
 
 
-/* FOOTER BELOW */
-footer {
-  background: white;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+/* SELFIE IMAGE */
+
+#selfie {
+  width: 25%;
+  height: auto;
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+
+/* ***BELOW*** PROJECTS ***BELOW*** */
+
+.projects {
+  background: black;
+  color: white;
+  text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  color: black;
-  border-top: solid 10px black;
+}
+
+#portfolio {
+  display: flex;
+  padding: 15px 20px 30px 20px;
+}
+
+#portfolio section article {
+  border: solid 5px white;
+
 }
 
 
 
-/* MEDIA QUERIES */
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about div {
+  display: flex;
+}
+
+.about div figure img {
+  max-width: 100px;
+  max-height: auto;
+}
+
+
+
+
+/* ***BELOW*** FOOTER ***BELOW*** */
+footer {
+  color: white;
+  border-top: solid 10px rgb(255, 0, 0);
+  background: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+
+
+/* PROFILE -TABLET/DESKTOP MIN 750PX  */
 @media (min-width: 750px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 12.5px red;
+    width: 100%;
+    background: white;
+    padding: 10px 50px 10px 50px;
+  }
+
   #logo {
     max-width: 150px;
   }
 
-  header {
-    padding: 7px 3%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    border-bottom: solid 10px black;
+
+  .hello_world div:nth-of-type(2) {
+    font-size: 34px;
   }
 
   footer {
     background: black;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
-    border-top: solid 10px white;
+    border-top: solid 10px blue;
   }
-
 
 }
