@@ -8,8 +8,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -40,7 +38,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10px;
 }
 
 .hello_world div p {
@@ -83,6 +81,7 @@ header {
 .selfie_intro div:nth-of-type(2) p {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 16px;
   color: rgb(112, 112, 112);
 }
@@ -102,53 +101,44 @@ header {
 /* SELFIE IMAGE */
 
 #selfie {
-  width: 25%;
+  width: 150px;
   height: auto;
-  padding: 25px;
+  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-
-
 }
 
 
 /* ***BELOW*** PROJECTS ***BELOW*** */
 
-.projects {
+.projects article {
   background: black;
   color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#portfolio {
-  display: flex;
-  padding: 15px 20px 30px 20px;
-}
-
-#portfolio section article {
-  border: solid 5px white;
+  margin-bottom: 20px;
+  padding: 30px;
+  height: 250px;
 
 }
 
+.proj_image {
+  max-width: 190px;
+  height: auto;
+}
 
 
-/* ABOUT SECTION */
-
-.about {
+#about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about div {
+#about div {
   display: flex;
 }
 
-.about div figure img {
+#about div figure img {
   max-width: 100px;
   max-height: auto;
 }
@@ -156,7 +146,7 @@ header {
 
 
 
-/* ***BELOW*** FOOTER ***BELOW*** */
+
 footer {
   color: white;
   border-top: solid 10px rgb(255, 0, 0);
@@ -168,6 +158,9 @@ footer {
 
 }
 
+#portfolio {
+  grid-template-columns: 1fr 1fr;
+}
 
 
 /* PROFILE -TABLET/DESKTOP MIN 750PX  */
@@ -187,10 +180,42 @@ footer {
     max-width: 150px;
   }
 
-
-  .hello_world div:nth-of-type(2) {
-    font-size: 34px;
+  #selfie {
+    margin: 0;
   }
+
+  .wide_screen {
+    display: flex;
+    padding: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+
+
+  #emojis {
+    font-size: 50px;
+  }
+
+  .proj_image {
+    float: left;
+    align-items: center;
+    max-height: 200px;
+  }
+
+  .projects article {
+    background: black;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 250px;
+    align-items: center;
+  }
+
+
+
+
 
   footer {
     background: black;
