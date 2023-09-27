@@ -4,16 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Rodolfo's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
   </head>
 
   <body>
 
-    <!-- HEADER - LOGO/NAV -->
-
-    <header>
+    <header class="align-items flexC">
       <a href="./index.html"><img id="logo" src="./assets/img/rodo_logo_black.png" alt="Logo that says 'Rodo Code'"></a>
       <nav>
         <a href="#projects">Projects</a>
@@ -22,38 +20,27 @@
       </nav>
     </header>
 
-
-
-
-
-    <!-- HOLA WORLD -->
-
-    <div class="wide_screen">
+    <main>
       <section class="hello_world">
-        <div>
-          <p id="text_hola">'Hola'</p>
-          <p>World!</p>
+        <div id="text_title flexH">
+          <p class="align-items text-center" id="text_hola">'Hola'</p>
+          <p class="align-items text-center">World!</p>
         </div>
 
-
-
-        <!-- EMOJIS -->
-
-        <div id="emojis">
+        <div class="emojis text-center align-items">
           <span>&#128075</span>
           <span>&#127758</span>
         </div>
       </section>
 
 
-      <!-- TEXT BELOW EMOJI -->
-
-      <section class="selfie_intro">
-        <div>
-          <p>My Name Is <span id="rodolfo">Rodolfo</span></p>
+      <section class="align-items text-align flexC selfie_intro">
+        <div class="text-align align-items">
+          <p>My Name Is <span id="rodolfoText">Rodolfo</span></p>
         </div>
         <div>
-          <p>A WORK IN PROGRESS TO BECOME A <span id="full_stack_developer">
+          <p class="align-items flexC">A WORK IN PROGRESS TO BECOME A <span class="align-items"
+              id="full_stack_developer">
               FULL STACK DEVELOPER
             </span></p>
         </div>
@@ -61,44 +48,33 @@
 
       </section>
 
-
-
       <img id="selfie" src="./assets/img/me_edit2.png" alt="Image of Rodolfo Espinosa Nunez">
-    </div>
+      </div>
 
-    <!-- PROJECTS -->
+    </main>
 
-    <section class="projects">
-
-
-      <article>
-        <h4>Portfolio Webpage</h4>
-        <img class="proj_image" src="./assets/img/portfolio_screenshot.png" alt="Website Preview">
-        <p>This portfolio was built using strictly HTML and CSS.</p>
-        <button type="button">GitHub Repository</button>
-        <button type="button">Deployed Site</button>
-      </article>
-      <div class="wide_screen_portfolio">
-        <article>
-          <h4>Horiseon Bootcamp Assignment</h4>
-          <img class="proj_image" src="./assets/img/horiseon_preview.png" alt="Website Preview">
-          <p>Here is a view of the first homework assignment that was given to the class.</p>
-          <button type="button">GitHub Repository</button>
-          <button type="button">Deployed Site</button>
-        </article>
+    <section id="firstContainer" class="section flexC align-items text-align" style="background-color:lightgrey">
 
 
-        <article>
-          <h4>Project 3 COMING SOON</h4>
-          <img class="proj_image" src="./assets/img/Image-Coming-Soon-Placeholder.png" alt="Website Preview">
+      <h4>Generate a Password</h4>
+      <div class="flexC">
+        <img src="./assets/img/pwGeneratorPreview.png" alt="Website Preview">
 
-        </article>
-        <article>
-          <h4>Project 4 COMING SOON</h4>
-          <img class="proj_image" src="./assets/img/Image-Coming-Soon-Placeholder.png" alt="Website Preview">
 
-        </article>
+        <p>The main focus for this assignment was to create a javascript code that will generate a password based
+          on the answered prompts a user enters. The prompts are suppose to come up after the user clicks the
+          "Generate
+          Password" button.</p>
 
+        <a href="https://github.com/rodolfoespinosa01/bc_c2_portfolio" target="_blank">
+          <button>GitHub Repository</button>
+        </a>
+        <a href="'https://rodolfoespinosa01.github.io/bc_c2_portfolio/" target="_blank">
+          <button>Deployed Site</button>
+        </a>
+
+
+      </div>
 
 
     </section>
@@ -107,20 +83,67 @@
 
 
 
+
+    <section class="section" style="background-color:lightblue">
+
+
+
+      <article>
+
+        <h4>Horiseon Bootcamp Assignment</h4>
+        <!-- <img src="./assets/img/horiseon_preview.png" alt="Website Preview"> -->
+        <p>Here is a view of the first homework assignment that was given to the class.</p>
+        <button type="button">GitHub Repository</button>
+        <button type="button">Deployed Site</button>
+
+      </article>
+
+      <article>
+
+        <h4>Horiseon Bootcamp Assignment</h4>
+        <!-- <img src="./assets/img/horiseon_preview.png" alt="Website Preview"> -->
+        <p>Here is a view of the first homework assignment that was given to the class.</p>
+        <button type="button">GitHub Repository</button>
+        <button type="button">Deployed Site</button>
+
+      </article>
+
+      <article>
+
+        <h4>Horiseon Bootcamp Assignment</h4>
+        <!-- <img src="./assets/img/horiseon_preview.png" alt="Website Preview"> -->
+        <p>Here is a view of the first homework assignment that was given to the class.</p>
+        <button type="button">GitHub Repository</button>
+        <button type="button">Deployed Site</button>
+
+      </article>
+
+      <article>
+
+        <h4>Horiseon Bootcamp Assignment</h4>
+        <!-- <img src="./assets/img/horiseon_preview.png" alt="Website Preview"> -->
+        <p>Here is a view of the first homework assignment that was given to the class.</p>
+        <button type="button">GitHub Repository</button>
+        <button type="button">Deployed Site</button>
+
+      </article>
+
+    </section>
+
+
+
     <!-- ABOUT SECTION -->
 
-    <section id="about">
+    <section>
+
+
       <h1>About Section</h1>
-      <div>
-        <figure><img src="./assets/img/—Pngtree—future intelligent technology robot ai_5766888.png" alt="Robot Icon">
-        </figure>
-        <figure><img src="./assets/img/—Pngtree—cartoon hand-painted kitchen electronic scale_7011104.png" alt="">
-        </figure>
-        <figure><img src="./assets/img/—Pngtree—diet program on mobile app_5554700.png" alt=""></figure>
-      </div>
+
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptates quo, dolorum saepe impedit
         perferendis a quae quasi repudiandae aliquid est error magnam ab voluptatum ipsum eligendi quis necessitatibus
         accusamus.</p>
+
+
     </section>
 
 
@@ -148,12 +171,10 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="text-center flexC">
       <p>&copy; 2023</p>
       <p>Designed and Dev'd by Rodolfo</p>
     </footer>
   </body>
 
 </html>
-
-<!-- Will class: text-center to anything if it goes inside the nav element? -->
