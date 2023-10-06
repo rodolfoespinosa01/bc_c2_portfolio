@@ -1,9 +1,7 @@
 # Portfolio Homework Assignment
 
 ## Description
-Potfolio website
-
-
+Potfolio website that is responsive with small screens and large screens.
 
 #### DEPLOYED APPLICATION GIT HUB SITE
 
